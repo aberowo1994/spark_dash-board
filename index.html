@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/598e797b2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <section class="first--line">
+      <!-- logoHamburger--layout start here -->
+      <!-- <section class="menu menu--bar"> -->
+      <div class="logo--hamburger">
+        <div class="hamburger">
+          <span>
+            <i class="fa-solid fa-bars-staggered"></i>
+          </span>
+        </div>
+        <div class="logo">
+          <span>spark</span>
+        </div>
+      </div>
+      <!-- logoHamburger--layout end here -->
+      <!-- search bar layout start here -->
+      <div class="input--box">
+        <input
+          type="search"
+          id="search"
+          placeholder="Search across your project"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <!-- search bar layout end here -->
+      <!-- notification and message icon layout start here -->
+      <div class="notification--message">
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-message"></i>
+      </div>
+      <!-- notification and message icon layout end here -->
+    </section>
+
+    <!-- the menu layout start from here -->
+    <!-- logoHamburger--layout start here -->
+    <section class="menu ">
+      <!-- <div class="logo--hamburger">
+          <div class="hamburger">
+            <span>
+              <i class="fa-solid fa-bars-staggered"></i>
+            </span>
+          </div>
+          <div class="logo">
+            <span>spark</span>
+          </div>
+        </div> -->
+      <!-- logoHamburger--layout end here -->
+      <!-- profile--layout start here -->
+      <div class="profile--container">
+        <div class="image-wrapper">
+          <img src="image/profile.png" alt="" />
+        </div>
+        <div class="name-position">
+          <p>Barbara Anderson</p>
+          <p>product designer</p>
+        </div>
+      </div>
+      <!-- profile--layout end here -->
+
+      <!-- menuList--layout start here -->
+      <ul class="menu--wrapper">
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-cube"></i>
+            </span>
+            <span class="list--name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-list-check"></i>
+            </span>
+            <span class="list--name">tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-pencil"></i>
+            </span>
+            <span class="list--name">project</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-calendar"></i>
+            </span>
+            <span class="list--name">calendar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-folder-tree"></i>
+            </span>
+            <span class="list--name">reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="list--icon">
+              <i class="fa-solid fa-gear"></i>
+            </span>
+            <span class="list--name">settings</span>
+          </a>
+        </li>
+      </ul>
+      <!-- menuList--layout end here -->
+      <div class="btn--switch">
+        <button>
+          <span class="toggle"></span>
+        </button>
+      </div>
+    </section>
+    <!-- the menu layout end here -->
+
+    <!-- main layout start here -->
+    <main>
+      <h1>Dashboard</h1>
+      <section class="overview">
+        <div class="overview--box">
+          <div class="project--total">
+            <p>total project</p>
+            <span>20</span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="overview--box">
+          <div class="project--total">
+            <p>total project</p>
+            <span>20</span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="overview--box">
+          <div class="project--total">
+            <p>total project</p>
+            <span>20</span>
+          </div>
+          <div class="line"></div>
+        </div>
+      </section>
+      <section class="main--section2">
+        <!-- first container in the main second section starts here -->
+        <div class="project--container">
+          <h3>Project for this month</h3>
+          <div class="block--1">
+            <div class="contents">
+              <p>snackie food delivery app</p>
+              <p>Due date:28/02/22</p>
+            </div>
+            <div class="task--progress">
+              <div class="task">
+                <span>Task done: 60%</span>
+                <a href="#" class="high--btn">
+                  <span>high priority</span>
+                </a>
+              </div>
+              <div class="progress--bar"></div>
+            </div>
+          </div>
+          <div class="block--2">
+            <div class="contents">
+              <p>personal portfolio site</p>
+              <p>Due date:28/02/22</p>
+            </div>
+            <div class="task--progress">
+              <div class="task">
+                <span>Task done: 85%</span>
+                <a href="#" class="high--btn">
+                  <span>high priority</span>
+                </a>
+              </div>
+              <div class="progress--bar"></div>
+            </div>
+          </div>
+        </div>
+        <!-- first container in the main second section end here -->
+        <!-- second container in the main second section start here -->
+        <div class="task--container">
+          <h3>To-do list</h3>
+          <div class="task--subcon1">
+            <p>Design dashoard</p>
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Apply for jobs online</p>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Continue UX course</p>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Prepare UX research form</p>
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Work on porifolio</p>
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Workout</p>
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="task--subcon1">
+            <p>Watch movies</p>
+            <i class="fa-regular fa-circle"></i>
+          </div>
+        </div>
+        <!-- second container in the main second section end here -->
+        <!-- third container in the main second section start here -->
+
+        <div class="reminder--container">
+          <h3>Reminder</h3>
+          <p>Continue cousera course</p>
+          <span>6:30pm</span>
+        </div>
+
+        <!-- third container in the main second section end here -->
+      </section>
+      <!-- main section--3 layout start here  -->
+      <section class="main--section3">
+        <p>Consistency insights</p>
+        <h3>You have completed 74% of your tasks and projects within 7days</h3>
+        <div class="line--chart--container">
+          <canvas id="myChart" width="1119.13px" height="464px"> </canvas>
+
+          <a href="#">See more</a>
+        </div>
+      </section>
+      <!-- main section--3 layout end here  -->
+    </main>
+    <!-- main layout end here -->
+  </body>
+</html>
