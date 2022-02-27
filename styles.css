@@ -39,7 +39,7 @@
 
 body {
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   color: var(--text--color1);
   font-family: var(--font-family--inter);
   background: var(--background--color);
@@ -129,7 +129,7 @@ body {
 .menu {
   /* border: 2px solid red; */
   position: fixed;
-  height: auto;
+  max-height: auto;
   width: 100px;
   /* width: 282px; */
   top: 0%;
@@ -148,6 +148,7 @@ body {
   /* box-shadow: var(--box--shadow); */
   /* z-index: -1; */
   /* box-shadow: var(--box--shadow); */
+  /* overflow-x: hidden; */
 }
 
 menu.active {
@@ -342,6 +343,7 @@ main {
   background-color: var(--main--backgroundColor);
   padding: 30px 60px;
   transition: all 500ms linear;
+  /* overflow: hidden; */
 }
 main.active--2 {
   width: calc(100% - 282px);
